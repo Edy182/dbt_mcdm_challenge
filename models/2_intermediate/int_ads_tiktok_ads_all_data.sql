@@ -20,7 +20,7 @@ with stg_ads_tiktok as (
     0 as revenue,
     shares,
     spend,
-    0 as total_conversions,
+    conversions as total_conversions,
     0 as video_views,
     ad_id,
     adset_id,
