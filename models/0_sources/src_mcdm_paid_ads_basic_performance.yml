@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: mcdm_paid_ads_basic_performance_bing_gbq
+    schema: dbt_eduarte
+    tags:
+      - bing
+    tables:
+      - name: src_ads_bing_all_data
+        identifier: src_ads_bing_all_data
+
+  - name: mcdm_paid_ads_basic_performance_facebook_gbq
+    schema: dbt_eduarte
+    tags:
+      - facebook
+    tables:
+      - name: src_ads_creative_facebook_all_data
+        identifier: src_ads_creative_facebook_all_data
+        
+  - name: mcdm_paid_ads_basic_performance_tiktok_gbq
+    schema: dbt_eduarte
+    tags:
+      - tiktok
+    tables:
+      - name: src_ads_tiktok_ads_all_data
+        identifier: src_ads_tiktok_ads_all_data
+
+  - name: mcdm_paid_ads_basic_performance_twitter_gbq
+    schema: dbt_eduarte
+    tags:
+      - twitter
+    tables:
+      - name: src_promoted_tweets_twitter_all_data
+        identifier: src_promoted_tweets_twitter_all_data                        
