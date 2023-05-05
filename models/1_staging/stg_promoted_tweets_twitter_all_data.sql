@@ -19,9 +19,9 @@ select
     url_clicks        as url_clicks,
     retweets          as retweets,
     spend             as spend,
-    video_total_views as video_views,
+    video_total_views as video_total_views,
     0                 as add_to_cart,
-    0                 as placement_id
+    ''                as placement_id
 
   from src_promoted_tweets_twitter_all_data
 )
