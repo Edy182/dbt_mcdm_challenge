@@ -9,7 +9,7 @@ select
     ad_id                      as ad_id,
     adset_id                   as adset_id,
     campaign_id                as campaign_id,
-    channel                    as channel,
+    'Bing'                     as channel,
     ad_description             as ad_description,
     title_part_1               as title_part_1,
     title_part_2               as title_part_2,
@@ -18,7 +18,7 @@ select
     imps                       as impressions,
     revenue                    as revenue,
     spend                      as spend,
-    conv                       as conversions
+    conv                       as total_conversions
 
   from src_ads_bing_all_data
 )

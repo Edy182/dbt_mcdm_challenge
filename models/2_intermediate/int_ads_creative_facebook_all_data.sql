@@ -3,32 +3,31 @@
 with stg_ads_facebook as (
   select
 
-      date,
+      ad_id,
       add_to_cart,
+      adset_id,
+      campaign_id,
+      channel,
       clicks,
       comments,
-      0 as engagements,
+      creative_id,
+      date,
+      likes + shares + comments + views + clicks as engagements,
       impressions,
-      0 as installs,
+      mobile_app_install as installs,
       likes,
-      0 as link_clicks,
+      inline_link_clicks as link_clicks,
+      '' as placement_id,
       0 as post_click_conversions,
       0 as post_view_conversions,
       0 as posts,
       purchase,
-      0 as registrations,
-      0 as revenue,
+      complete_registration as registrations,
+      purchase_value as revenue,
       shares,
       spend,
-      0 as total_conversions,
-      0 as video_views,
-      ad_id,
-      adset_id,
-      campaign_id,
-      channel,
-      creative_id,
-      0 as placement_id
-
+      purchase as total_conversions,
+      views as video_views
      
   from {{ref('stg_ads_creative_facebook_all_data')}}
 )

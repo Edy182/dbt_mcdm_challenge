@@ -27,8 +27,7 @@ select
     0                as comments,
     0                as likes,
     0                as shares,
-    0                as adset_id,
-    0                as creative_id
+    null             as creative_id
 
   from src_ads_tiktok_ads_all_data
 )
